@@ -3,9 +3,12 @@
 <video alt="Simulation Video" src="https://github.com/user-attachments/assets/ad55bd22-e247-4d9a-9e49-7633f3611f2b"></video>
 
 
+
 ## 몇가지 질문들과 해답
 
-### 왜 dashpot_damping 계수에 quad_size를 곱해줘야할까?
+
+
+### 1. 왜 dashpot_damping 계수에 quad_size를 곱해줘야할까?
     
   ```python
   force += -v_ij.dot(d) * (dashpot_damping * quad_size) * d # dashpot damping force
@@ -21,8 +24,9 @@
   
   입자의 개수와 무관하게 옷의 성질이 유지되도록 해야함
 
+---
 
-### 왜 drag_damping 을 복잡하게 지수형태로 쓸까?
+### 2. 왜 drag_damping 을 복잡하게 지수형태로 쓸까?
     
   ```python
   for i in ti.grouped(x):
@@ -79,8 +83,9 @@
           
           정밀도를 높여도 초당 속도 감소량은 일정함.
             
+---
 
-### `substep()`함수에서 왜 for문을 중간중간 끊어야하나?
+### 3. `substep()`함수에서 왜 for문을 중간중간 끊어야하나?
     
   ```python
   @ti.kernel

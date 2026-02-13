@@ -1,3 +1,3 @@
 # Mass-Spring-Cloth-Simulation
 
-<img width="1016" height="1044" alt="Image" src="https://github.com/user-attachments/assets/b9ded2c3-fa38-4add-9e7d-73466870b7aa" />
+<video alt="Simulation Video" src="https://github.com/user-attachments/assets/ad55bd22-e247-4d9a-9e49-7633f3611f2b">
